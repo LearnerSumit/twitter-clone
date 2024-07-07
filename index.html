@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- remixIcon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Custome css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Twitter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FEFEFF;
+            font-family: 'Geologica', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <img src="logo.png" />
+            </div>
+            <div class="list">
+                <div class="icon">
+                    <i class="ri-home-3-line"></i>
+                    <span>Home</span>
+                </div>
+                <div class="icon">
+                    <i class="ri-search-line"></i>
+                    <span>Explore</span>
+                </div>
+                <div class="icon">
+                    <i class="ri-notification-3-line"></i>
+                    <span>Notification</span>
+                </div>
+                <div class="icon">
+                    <i class="ri-mail-line"></i>
+                    <span>Message</span>
+                </div>
+                <div class="icon">
+                    <i class="ri-forbid-2-line"></i>
+                    <span>Grok</span>
+                </div>
+                <div class="icon">
+                    <i class="ri-list-settings-line"></i>
+                    <span>List</span>
+                </div>
+                <div class="icon">
+                    <i class="ri-user-line"></i>
+                    <span>Profile</span>
+                </div>
+                <div class="icon">
+                    <i class="ri-more-line"></i>
+                    <span>More</span>
+                </div>
+            </div>
+            <div class="post-btn">
+                <button>Post</button>
+            </div>
+            <div class="account">
+                <div class="profile-img">
+                    <img src="dp.jpeg" alt="">
+                    <div class="username">
+                        <h3>Username</h3>
+                        <p>@username</p>
+                    </div>
+                </div>
+                <div class="threedout">
+                    <i class="ri-more-line"></i>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <nav>
+                <a href="#">For you</a>
+                <a href="#">Following</a>
+                <a href="#">Science</a>
+                <div class="nav-icon">
+                    <i class="ri-settings-2-line"></i>
+                </div>
+            </nav>
+            <div class="post-write">
+                <div class="top">
+                    <div class="profile-img">
+                        <img src="dp.jpeg" alt="">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="What's happening?">
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="icons">
+                        <i class="ri-image-line"></i>
+                        <i class="ri-file-gif-line"></i>
+                        <i class="ri-list-radio"></i>
+                        <i class="ri-emotion-happy-line"></i>
+                        <i class="ri-calendar-schedule-line"></i>
+                        <i class="ri-map-pin-line"></i>
+                    </div>
+                    <div class="btn">
+                        <button>post</button>
+                    </div>
+                </div>
+            </div>
+            <div class="total-post">
+                <p>Show 875 posts</p>
+            </div>
+            <div class="user-post">
+                <div class="post-top">
+                    <div class="community">
+                        <i class="ri-group-line"></i>
+                        <p>Science</p>
+                    </div>
+                    <div class="userid">
+                        <div class="dp">
+                            <img src="dp.jpeg" alt="">
+                            <div class="username">
+                                <h3>Username</h3>
+                                <p>@username</p>
+                            </div>
+                        </div>
+                        <i class="ri-more-line"></i>
+                    </div>
+                </div>
+                <div class="post-text">
+                    <p>What is functions of this organ???</p>
+                </div>
+                <div class="post-middle">
+                    <img src="https://pbs.twimg.com/media/GGUIAQ3XkAAOpn1?format=jpg&name=small" alt="">
+                </div>
+                <div class="time-date">
+                    <p>11:02 PM</p>
+                    <span></span>
+                    <p>Feb 14,2024</p>
+                    <span></span>
+                    <strong>1996</strong>
+                    <p>View</p>
+                </div>
+                <div class="post-bottom">
+                    <div class="icon">
+                        <i class="ri-chat-3-line"></i>
+                        <span class="count">12</span>
+                    </div>
+                    <div class="icon">
+                        <i id="repost" class="ri-repeat-line"></i>
+                    </div>
+                    <div class="icon">
+                        <i id="heart" class="ri-heart-line"></i>
+                        <span id="heart-count">12</span>
+                    </div>
+                    <div class="icon">
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="ri-upload-2-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="user-post">
+                <div class="post-top">
+                    <div class="community">
+                        <i class="ri-group-line"></i>
+                        <p>Science</p>
+                    </div>
+                    <div class="userid">
+                        <div class="dp">
+                            <img src="dp.jpeg" alt="">
+                            <div class="username">
+                                <h3>Username</h3>
+                                <p>@username</p>
+                            </div>
+                        </div>
+                        <i class="ri-more-line"></i>
+                    </div>
+                </div>
+                <div class="post-text">
+                    <p>What is functions of this organ???</p>
+                </div>
+                <div class="post-middle">
+                    <img src="https://pbs.twimg.com/media/GGUIAQ3XkAAOpn1?format=jpg&name=small" alt="">
+                </div>
+                <div class="time-date">
+                    <p>11:02 PM</p>
+                    <span></span>
+                    <p>Feb 14,2024</p>
+                    <span></span>
+                    <strong>1996</strong>
+                    <p>View</p>
+                </div>
+                <div class="post-bottom">
+                    <div class="icon">
+                        <i class="ri-chat-3-line"></i>
+                        <span id="repost-count">12</span>
+                    </div>
+                    <div class="icon">
+                        <i id="repost" class="ri-repeat-line"></i>
+                    </div>
+                    <div class="icon">
+                        <i id="heart" class="ri-heart-line"></i>
+                        <span id="heart-count">12</span>
+                    </div>
+                    <div class="icon">
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="ri-upload-2-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="user-post">
+                <div class="post-top">
+                    <div class="community">
+                        <i class="ri-group-line"></i>
+                        <p>Science</p>
+                    </div>
+                    <div class="userid">
+                        <div class="dp">
+                            <img src="dp.jpeg" alt="">
+                            <div class="username">
+                                <h3>Username</h3>
+                                <p>@username</p>
+                            </div>
+                        </div>
+                        <i class="ri-more-line"></i>
+                    </div>
+                </div>
+                <div class="post-text">
+                    <p>What is functions of this organ???</p>
+                </div>
+                <div class="post-middle">
+                    <img src="https://pbs.twimg.com/media/GGUIAQ3XkAAOpn1?format=jpg&name=small" alt="">
+                </div>
+                <div class="time-date">
+                    <p>11:02 PM</p>
+                    <span></span>
+                    <p>Feb 14,2024</p>
+                    <span></span>
+                    <strong>1996</strong>
+                    <p>View</p>
+                </div>
+                <div class="post-bottom">
+                    <div class="icon">
+                        <i class="ri-chat-3-line"></i>
+                        <span id="repost-count">12</span>
+                    </div>
+                    <div class="icon">
+                        <i id="repost" class="ri-repeat-line"></i>
+                    </div>
+                    <div class="icon">
+                        <i id="heart" class="ri-heart-line"></i>
+                        <span id="heart-count">12</span>
+                    </div>
+                    <div class="icon">
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="ri-upload-2-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="user-post">
+                <div class="post-top">
+                    <div class="community">
+                        <i class="ri-group-line"></i>
+                        <p>Science</p>
+                    </div>
+                    <div class="userid">
+                        <div class="dp">
+                            <img src="dp.jpeg" alt="">
+                            <div class="username">
+                                <h3>Username</h3>
+                                <p>@username</p>
+                            </div>
+                        </div>
+                        <i class="ri-more-line"></i>
+                    </div>
+                </div>
+                <div class="post-text">
+                    <p>What is functions of this organ???</p>
+                </div>
+                <div class="post-middle">
+                    <img src="https://pbs.twimg.com/media/GGUIAQ3XkAAOpn1?format=jpg&name=small" alt="">
+                </div>
+                <div class="time-date">
+                    <p>11:02 PM</p>
+                    <span></span>
+                    <p>Feb 14,2024</p>
+                    <span></span>
+                    <strong>1996</strong>
+                    <p>View</p>
+                </div>
+                <div class="post-bottom">
+                    <div class="icon">
+                        <i class="ri-chat-3-line"></i>
+                        <span id="repost-count">12</span>
+                    </div>
+                    <div class="icon">
+                        <i id="repost" class="ri-repeat-line"></i>
+                    </div>
+                    <div class="icon">
+                        <i id="heart" class="ri-heart-line"></i>
+                        <span id="heart-count">12</span>
+                    </div>
+                    <div class="icon">
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="ri-upload-2-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="user-post">
+                <div class="post-top">
+                    <div class="community">
+                        <i class="ri-group-line"></i>
+                        <p>Science</p>
+                    </div>
+                    <div class="userid">
+                        <div class="dp">
+                            <img src="dp.jpeg" alt="">
+                            <div class="username">
+                                <h3>Username</h3>
+                                <p>@username</p>
+                            </div>
+                        </div>
+                        <i class="ri-more-line"></i>
+                    </div>
+                </div>
+                <div class="post-text">
+                    <p>What is functions of this organ???</p>
+                </div>
+                <div class="post-middle">
+                    <img src="https://pbs.twimg.com/media/GGUIAQ3XkAAOpn1?format=jpg&name=small" alt="">
+                </div>
+                <div class="time-date">
+                    <p>11:02 PM</p>
+                    <span></span>
+                    <p>Feb 14,2024</p>
+                    <span></span>
+                    <strong>1996</strong>
+                    <p>View</p>
+                </div>
+                <div class="post-bottom">
+                    <div class="icon">
+                        <i class="ri-chat-3-line"></i>
+                        <span id="repost-count">12</span>
+                    </div>
+                    <div class="icon">
+                        <i id="repost" class="ri-repeat-line"></i>
+                    </div>
+                    <div class="icon">
+                        <i id="heart" class="ri-heart-line"></i>
+                        <span id="heart-count">12</span>
+                    </div>
+                    <div class="icon">
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="ri-upload-2-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="search-box">
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="youtube-ad">
+                <h2>Subscribe to Premium</h2>
+                <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                <button>Subscribe </button>
+            </div>
+            <div class="current-news">
+                <h2>What’s happening</h2>
+                <div class="news-img">
+                    <div class="new-img-left">
+                        <h3>Super Bowl LVIII: 49ers at Chiefs</h3>
+                        <div class="new-date">
+                            <p>Super Bowl LVIII</p>
+                            <span></span>
+                            <p>February 12, 2024</p>
+                        </div>
+                    </div>
+                    <div class="new-img-right">
+                        <img src="https://pbs.twimg.com/semantic_core_img/1752775289661276160/whhjZlcb?format=jpg&name=240x240"
+                            alt="">
+                    </div>
+                </div>
+                <div class="tranding">
+                    <div class="tranding-top">
+                        <p>Trending in india</p>
+                        <strong>#IndiaUnderAttack</strong>
+                        <p>21.6k posts</p>
+                    </div>
+                    <i class="ri-more-line"></i>
+                </div>
+                <div class="tranding">
+                    <div class="tranding-top">
+                        <p>Trending in Pk</p>
+                        <strong>#ImranKhan</strong>
+                        <p>21.6k posts</p>
+                    </div>
+                    <i class="ri-more-line"></i>
+                </div>
+                <div class="tranding">
+                    <div class="tranding-top">
+                        <p>Trending in india</p>
+                        <strong>#EconommicActivity</strong>
+                        <p>21.6k posts</p>
+                    </div>
+                    <i class="ri-more-line"></i>
+                </div>
+                <div class="tranding">
+                    <div class="tranding-top">
+                        <p>Sport Trending</p>
+                        <strong>#Jateja</strong>
+                        <p>20.0k posts</p>
+                    </div>
+                    <i class="ri-more-line"></i>
+                </div>
+                <div id="showmore">
+                    <p>Show more</p>
+                </div>
+            </div>
+            <div class="whotofollow">
+                <h2>Who to follow</h2>
+                <div class="allprofile">
+                    <div class="profile-img">
+                        <img src="dp.jpeg" alt="">
+                        <div class="usename">
+                            <h3>Username</h3>
+                            <p>@username</p>
+                        </div>
+                    </div>
+                    <div class="follow-btn">
+                        <button>Follow</button>
+                    </div>
+                </div>
+                <div class="allprofile">
+                    <div class="profile-img">
+                        <img src="dp.jpeg" alt="">
+                        <div class="usename">
+                            <h3>Username</h3>
+                            <p>@username</p>
+                        </div>
+                    </div>
+                    <div class="follow-btn">
+                        <button>Follow</button>
+                    </div>
+                </div>
+                <div class="allprofile">
+                    <div class="profile-img">
+                        <img src="dp.jpeg" alt="">
+                        <div class="usename">
+                            <h3>Username</h3>
+                            <p>@username</p>
+                        </div>
+                    </div>
+                    <div class="follow-btn">
+                        <button>Follow</button>
+                    </div>
+                </div>
+                <div class="allprofile">
+                    <div class="profile-img">
+                        <img src="dp.jpeg" alt="">
+                        <div class="usename">
+                            <h3>Username</h3>
+                            <p>@username</p>
+                        </div>
+                    </div>
+                    <div class="follow-btn">
+                        <button>Follow</button>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <footer-top>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </footer-top>
+                <footer-bottom>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Ad info</a>
+                    <a href="#">More <i class="ri-more-line"></i></a>
+                    <a href="#">© 2024 X Corp.</a>
+                </footer-bottom>    
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
